@@ -1374,7 +1374,7 @@ nav.navbar.bootsnav {
 @media (min-width: 1024px) {
 
   nav.navbar.bootsnav.bg-theme {
-    background: #F6F6F6;
+    background: #F6F6F6 !important;
   }
 
   nav.navbar.bootsnav.bg-theme .logo-regular {
