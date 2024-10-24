@@ -36,8 +36,7 @@
             scroll-behavior: smooth;
         }
         .carousel-item {
-            transition: transform 1.5s ease-in-out !important;
-            /* Sliding animation duration */
+            transition: transform 1.5s ease-in-out !important; /* Sliding animation duration */
         }
         .banner-area {
             padding: 50px 0;
@@ -175,9 +174,7 @@
         // Resume auto sliding when user clicks on control
         $('#clinicCarousel').on('click', '.carousel-control-prev, .carousel-control-next', function() {
             $('#clinicCarousel').carousel('pause'); // Pause the carousel when controls are clicked
-            setTimeout(function() {
-                $('#clinicCarousel').carousel('cycle'); // Resume auto sliding after a brief pause
-            }, 2000); // Same duration as the interval
+            $('#clinicCarousel').carousel('cycle'); // Resume auto sliding immediately
         });
     });
 </script>
